@@ -1,0 +1,22 @@
+<header>
+<h1>
+  {{title}}, {{myName}}
+</h1>
+    
+    <nav>
+        <ul>
+            <li> <a [routerLink]="['/']"> Home </a> </li>
+            <li> <a [routerLink]="['/movie']"> Movie </a> </li>
+            <li> <a [routerLink]="['/game']"> Game </a> </li>
+        </ul>
+    
+    </nav>
+</header>
+    
+<section id="main">
+    
+    <router-outlet> </router-outlet> 
+       <!-- <app-home [customBinding]="customBinding" (onCustomEventBinding)="customEventBindig($event)"> </app-home>  -->
+   <!-- <app-sample> Sample Tag Value </app-sample>  -->
+</section>
+ 
